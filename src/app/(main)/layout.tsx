@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import React from "react";
 import SessionProvider from "./SessionProvider";
 import Navbar from "./Navbar";
-import MenuBar from "./Menubar";
+import MenuBar from "./MenuBar";
 
 const LayoutFun = async ({ children }: { children: React.ReactNode }) => {
   const session = await validateRequest();
