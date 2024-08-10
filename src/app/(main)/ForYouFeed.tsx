@@ -1,6 +1,7 @@
 "use client";
 
 import InfiniteScrollContainer from "@/components/InfiniteScrollContainer";
+import DeletePostDialog from "@/components/posts/DeletePostDialog";
 import Post from "@/components/posts/Post";
 import PostsLoadingSkeleton from "@/components/posts/PostsLoadingSkeleton";
 import { Button } from "@/components/ui/button";
@@ -8,7 +9,7 @@ import kyInstance from "@/lib/ky";
 import prisma from "@/lib/prisma";
 import { PostData, PostsPage } from "@/lib/types";
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
-import { Loader2 } from "lucide-react";
+import { DeleteIcon, Loader2 } from "lucide-react";
 
 export default function ForYouFeed() {
   const {
